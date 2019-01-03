@@ -1,7 +1,7 @@
 // Code DigitalClicker Component Here
 import React from 'react';
 
-export default class ControlledInput extends Component {
+export default class ControlledInput extends React.Component {
   state = {
     firstName: "John",
     lastName: "Henry"
