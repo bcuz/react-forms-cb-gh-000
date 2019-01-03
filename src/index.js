@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import DigitalClicker from './components/DigitalClicker';
+import ControlledInput from './components/ControlledInput';
 
 
 ReactDOM.render(
