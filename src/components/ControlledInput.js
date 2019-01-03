@@ -1,25 +1,18 @@
 // Code DigitalClicker Component Here
 import React from 'react';
 
-export default class DigitalClicker extends React.Component {
-  constructor() {
-   super();
+export default class Form extends Component {
+  state = {
+    firstName: "John",
+    lastName: "Henry"
+  }
 
-   this.state = {
-     timesClicked: 0
-   };
- }
-
- handleClick = () => {
- this.setState({
-   timesClicked: this.state.timesClicked + 1
- })
-}
   render() {
     return (
-      <div>
-        <button onClick={this.handleClick}>{this.state.timesClicked}</button>
-      </div>
+      <form>
+        <input type="text" name="firstName" value={this.state.firstName} />
+        <input type="text" name="lastName" value={this.state.lastName} />
+      </form>
     )
   }
 }
